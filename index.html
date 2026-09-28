@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>趣味知识问答</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+
+    <section class="view active" id="home-view">
+      <h1>趣味知识问答</h1>
+      <p class="description">快来测试一下你的知识储备吧！</p>
+      <button class="action-btn" id="btn-start">开始挑战</button>
+    </section>
+
+    
+    <section class="view" id="question-view">
+      <h2 id="q-title"></h2>
+      <div class="info-bar">
+        <span id="q-progress"></span>
+        <span id="score-tracker"></span>
+      </div>
+      <div class="choices" id="choices-container"></div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="bar-fill"></div>
+      </div>
+    </section>
+
+    
+    <section class="view" id="end-view">
+      <h2>答题结束</h2>
+      <div class="summary-box">
+        <p class="score-summary" id="summary-score"></p>
+        <p class="feedback" id="summary-feedback"></p>
+      </div>
+      <button class="action-btn" id="btn-retry">再来一次</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
